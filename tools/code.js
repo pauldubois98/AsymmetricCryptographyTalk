@@ -81,3 +81,32 @@ function inverse_k() {
     i_k = n;
   }
 }
+function decode() {
+  if (pgcd(k, ALPHABET_SIZE) == 1) {
+    inverse_k();
+    var txt = end_text.value
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .replace(" ", "@")
+      .toUpperCase();
+    end_text.value = txt.replace("@", " ");
+    end_sequence = [];
+    for (var i = 0; i < txt.length; i++) {
+      end_sequence.push(txt[i].charCodeAt(0));
+    }
+    start_sequence = [];
+    for (var i = 0; i < txt.length; i++) {
+      c = end_sequence[i];
+      if (c <= 90 && c >= 64) {
+        d =
+          (((((c - 64) * i_k) % ALPHABET_SIZE) + ALPHABET_SIZE) %
+            ALPHABET_SIZE) +
+          64;
+      } else {
+        d = c;
+      }
+      start_sequence.push(d);
+    }
+    start_text.value = String.fromCharCode(...start_sequence).replace("@", " ");
+  }
+}

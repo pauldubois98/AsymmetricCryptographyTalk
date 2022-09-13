@@ -25,14 +25,16 @@ canvas{
     display: flex;
     align-items: center;
 }
-#translate p{
+#direction{
     margin: 0.5em;
+    text-align: center;
 }
 @media (max-width: 640px) {
     #translate{
         flex-direction: column;
     }
-    #translate p{
+    #direction{
         transform: rotate(90deg);
+        height: 3em;
     }
 }

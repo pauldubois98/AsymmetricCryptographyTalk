@@ -2,12 +2,14 @@ var lines_canvas = document.getElementById("lines_corresp");
 var k_input = document.getElementById("k");
 var start_text = document.getElementById("start_text");
 var end_text = document.getElementById("end_text");
+var direction_btn = document.getElementById("direction");
 const HEIGHT = lines_canvas.offsetHeight;
 const WIDTH = lines_canvas.offsetWidth;
 const ALPHABET_SIZE = 27;
 const CHAR_HEIGHT = HEIGHT / ALPHABET_SIZE;
 var k;
 var i_k;
+var direction = 0;
 var lines_ctx = lines_canvas.getContext("2d");
 lines_ctx.canvas.width = WIDTH;
 lines_ctx.canvas.height = HEIGHT;
@@ -119,3 +121,22 @@ function decode() {
     start_text.value = String.fromCharCode(...start_sequence).replace("@", " ");
   }
 }
+
+function translate() {
+  if (direction == 0) {
+    decode();
+  } else {
+    encode();
+  }
+}
+
+function change_direction() {
+  if (direction == 0) {
+    direction_btn.innerText = "→";
+    direction = 1;
+  } else {
+    direction_btn.innerText = "←";
+    direction = 0;
+  }
+}
+change_direction();

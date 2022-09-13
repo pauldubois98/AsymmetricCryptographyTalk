@@ -12,6 +12,16 @@ var lines_ctx = lines_canvas.getContext("2d");
 lines_ctx.canvas.width = WIDTH;
 lines_ctx.canvas.height = HEIGHT;
 
+function get_k() {
+  k = ((Number(k_input.value) % ALPHABET_SIZE) + ALPHABET_SIZE) % ALPHABET_SIZE;
+  if (pgcd(k, ALPHABET_SIZE) == 1) {
+    end_text.disabled = false;
+    inverse_k();
+  } else {
+    end_text.disabled = true;
+  }
+}
+
 function line(start, end) {
   lines_ctx.beginPath();
   lines_ctx.moveTo(0, (0.5 + start) * CHAR_HEIGHT);
@@ -19,8 +29,8 @@ function line(start, end) {
   lines_ctx.stroke();
 }
 function all_lines() {
+  get_k();
   lines_ctx.clearRect(0, 0, WIDTH, HEIGHT);
-  k = ((Number(k_input.value) % ALPHABET_SIZE) + ALPHABET_SIZE) % ALPHABET_SIZE;
   for (let i = 0; i < ALPHABET_SIZE; i++) {
     line(i, (((i * k) % ALPHABET_SIZE) + ALPHABET_SIZE) % ALPHABET_SIZE);
   }
@@ -83,7 +93,6 @@ function inverse_k() {
 }
 function decode() {
   if (pgcd(k, ALPHABET_SIZE) == 1) {
-    inverse_k();
     var txt = end_text.value
       .normalize("NFD")
       .replace(/\p{Diacritic}/gu, "")

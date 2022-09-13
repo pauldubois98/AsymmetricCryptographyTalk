@@ -6,7 +6,8 @@ const HEIGHT = lines_canvas.offsetHeight;
 const WIDTH = lines_canvas.offsetWidth;
 const ALPHABET_SIZE = 27;
 const CHAR_HEIGHT = HEIGHT / ALPHABET_SIZE;
-var k = Number(k_input.value) % ALPHABET_SIZE;
+var k;
+var i_k;
 var lines_ctx = lines_canvas.getContext("2d");
 lines_ctx.canvas.width = WIDTH;
 lines_ctx.canvas.height = HEIGHT;
@@ -19,7 +20,7 @@ function line(start, end) {
 }
 function all_lines() {
   lines_ctx.clearRect(0, 0, WIDTH, HEIGHT);
-  k = Number(k_input.value) % ALPHABET_SIZE;
+  k = ((Number(k_input.value) % ALPHABET_SIZE) + ALPHABET_SIZE) % ALPHABET_SIZE;
   for (let i = 0; i < ALPHABET_SIZE; i++) {
     line(i, (((i * k) % ALPHABET_SIZE) + ALPHABET_SIZE) % ALPHABET_SIZE);
   }
@@ -52,3 +53,31 @@ function encode() {
   end_text.value = String.fromCharCode(...end_sequence).replace("@", " ");
 }
 encode();
+
+function pgcd(a, b) {
+  while (b > 0) {
+    r = a % b;
+    a = b;
+    b = r;
+  }
+  return a;
+}
+function inverse_k() {
+  if (pgcd(k, ALPHABET_SIZE) == 1) {
+    a = k;
+    b = ALPHABET_SIZE;
+    c = 1;
+    n = 0;
+    rn = 0;
+    while (rn != 1) {
+      n++;
+      an = n * a;
+      rn = an % b;
+      qn = (an - rn) / b;
+    }
+    // u = n;
+    // v = -qn;
+    // k*u + ALPHABET_SIZE*v = c
+    i_k = n;
+  }
+}

@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#corresp{
+    display: flex;
+    
+}
+#start_alphabet{
+    display: flex;
+    flex-direction: column;
+}
+#end_alphabet{
+    display: flex;
+    flex-direction: column;
+}

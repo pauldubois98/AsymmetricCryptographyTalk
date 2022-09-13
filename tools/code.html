@@ -9,7 +9,7 @@
     <h1>Basic Encoder / Decoder</h1>
     <div>
       <label for="k">k</label>
-      <input id="k" type="number" name="k" required value="0" onchange="all_lines();">
+      <input id="k" type="number" name="k" required value="0" onchange="all_lines(); encode();">
     </div>
     <div id="corresp">
       <div id="start_alphabet">
@@ -72,6 +72,11 @@
         <span>Y</span>
         <span>Z</span>
       </div>
+    </div>
+    <div id="translate">
+      <textarea name="start_text" id="start_text" cols="40" rows="3" onkeyup="encode();"></textarea>
+      <p>↔</p>
+      <textarea name="end_text" id="end_text" cols="40" rows="3"></textarea>
     </div>
   </body>
   <script src="code.js"></script>

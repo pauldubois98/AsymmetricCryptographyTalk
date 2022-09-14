@@ -15,3 +15,9 @@ def encode(txt, k):
             d = c
         out += chr(d+64)
     return out.replace('@', ' ')
+
+
+# test all encodings
+for k in range(27):
+    message = encode(s, k)
+    print(f"{k:2d} {message}")

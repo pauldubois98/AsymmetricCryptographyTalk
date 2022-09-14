@@ -29,7 +29,7 @@ canvas{
     margin: 0.5em;
     text-align: center;
 }
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
     #translate{
         flex-direction: column;
     }
@@ -37,4 +37,8 @@ canvas{
         transform: rotate(90deg);
         height: 3em;
     }
+    body {
+        transform: scale(2.5);
+        transform-origin: top center;
+     }
 }

@@ -1,5 +1,6 @@
 var lines_canvas = document.getElementById("lines_corresp");
 var k_input = document.getElementById("k");
+var i_k_input = document.getElementById("i_k");
 var start_text = document.getElementById("start_text");
 var end_text = document.getElementById("end_text");
 var direction_btn = document.getElementById("direction");
@@ -16,9 +17,10 @@ lines_ctx.canvas.height = HEIGHT;
 
 function get_k() {
   k = ((Number(k_input.value) % ALPHABET_SIZE) + ALPHABET_SIZE) % ALPHABET_SIZE;
+  inverse_k();
   if (pgcd(k, ALPHABET_SIZE) == 1) {
     end_text.disabled = false;
-    inverse_k();
+    
   } else {
     end_text.disabled = true;
   }
@@ -91,6 +93,9 @@ function inverse_k() {
     // v = -qn;
     // k*u + ALPHABET_SIZE*v = c
     i_k = n;
+    i_k_input.value = i_k;
+  } else {
+    i_k_input.value = "";
   }
 }
 function decode() {

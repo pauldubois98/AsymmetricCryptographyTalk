@@ -7,9 +7,15 @@
   </head>
   <body>
     <h1>Basic Encoder / Decoder</h1>
-    <div>
-      <label for="k">k</label>
-      <input id="k" type="number" name="k" required value="1" onchange="all_lines(); translate();">
+    <div id="input">
+      <div>
+        <label for="k">k:</label>
+        <input id="k" type="number" name="k" required value="1" onchange="all_lines(); translate();">
+      </div>
+      <div>
+        <label for="i_k">k<sup>-1</sup>:</label>
+        <input id="i_k" type="number" name="i_k" value="1" disabled>
+      </div>
     </div>
     <div id="corresp">
       <div id="start_alphabet">

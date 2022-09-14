@@ -4,6 +4,16 @@ s = 'OGOR GEA XY AGEA'.upper()
 print(s)
 
 
+# load all french words
+f = open("mots_francais-cleaned.txt", 'r')
+l = '*'
+mots = []
+while l != '':
+    l = f.readline()
+    mots.append(l.upper().replace('\n', ''))
+f.close()
+
+
 def encode(txt, k):
     """encoding function"""
     out = ''

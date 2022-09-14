@@ -1,3 +1,4 @@
+import bisect
 # message: "CECI EST UN TEST"
 # k=23
 s = 'OGOR GEA XY AGEA'.upper()
@@ -30,4 +31,9 @@ def encode(txt, k):
 # test all encodings
 for k in range(27):
     message = encode(s, k)
-    print(f"{k:2d} {message}")
+    print(f"{k:2d} {message}", end=' ')
+    for mot in message.split(' '):
+        i = bisect.bisect_left(mots, mot)
+        if i != len(mots) and mots[i] == mot:
+            print('<', end='')
+    print()

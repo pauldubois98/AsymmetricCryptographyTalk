@@ -10,10 +10,15 @@ body{
 #start_alphabet{
     display: flex;
     flex-direction: column;
+    text-align: right;
+}
+#lines_corresp{
+    margin: 0.2em;
 }
 #end_alphabet{
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 canvas{
     width: 10em;

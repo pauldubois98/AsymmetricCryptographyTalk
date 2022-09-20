@@ -38,3 +38,23 @@ function update_simpl() {
     simpl_input.value = n % mod;
   }
 }
+
+function update_mult() {
+  if (mod > 1) {
+    x = Number(x_input.value);
+    y = Number(y_input.value);
+    mult_input.value = (x * y) % mod;
+  }
+}
+
+function update_pow() {
+  if (mod > 1) {
+    z = Number(z_input.value);
+    e = Number(e_input.value);
+    var p = 1;
+    for (let i = 0; i < e; i++) {
+      p = (p * z) % mod;
+    }
+    pow_input.value = p;
+  }
+}

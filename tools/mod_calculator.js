@@ -25,10 +25,16 @@ function update_mods() {
     no_output();
   }
 }
-}
 function no_output() {
   simpl_input.value = "";
   mult_input.value = "";
   pow_input.value = "";
   inv_input.value = "";
+}
+
+function update_simpl() {
+  if (mod > 1) {
+    n = Number(n_input.value);
+    simpl_input.value = n % mod;
+  }
 }

@@ -13,9 +13,18 @@ const mods = document.querySelectorAll(".mod");
 var mod = 0;
 
 function update_mods() {
-  for (const mod of mods) {
-    mod.innerHTML = "[" + mod_input.value + "]";
+  mod = Number(mod_input.value);
+  if (mod !== 0 && mod > 1) {
+    for (const m of mods) {
+      m.innerHTML = "[" + mod + "]";
+    }
+  } else {
+    for (const m of mods) {
+      m.innerHTML = "[mod]";
+    }
+    no_output();
   }
+}
 }
 function no_output() {
   simpl_input.value = "";

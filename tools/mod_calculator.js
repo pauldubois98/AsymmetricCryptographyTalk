@@ -59,3 +59,16 @@ function update_pow() {
     pow_input.value = p;
   }
 }
+
+function update_inv() {
+  if (mod > 1) {
+    a = Number(a_input.value);
+    var a_i = 0;
+    for (let i = 1; i < mod; i++) {
+      if ((a * i) % mod == 1) {
+        a_i = i;
+      }
+    }
+    inv_input.value = a_i;
+  }
+}

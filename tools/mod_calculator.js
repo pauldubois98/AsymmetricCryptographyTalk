@@ -1,15 +1,16 @@
-var mod_input = document.getElementById("mod");
-var n_input = document.getElementById("n");
-var simpl_input = document.getElementById("simpl");
-var x_input = document.getElementById("x");
-var y_input = document.getElementById("y");
-var mult_input = document.getElementById("mult");
-var z_input = document.getElementById("z");
-var e_input = document.getElementById("e");
-var pow_input = document.getElementById("pow");
-var a_input = document.getElementById("a");
-var inv_input = document.getElementById("inv");
+const mod_input = document.getElementById("mod");
+const n_input = document.getElementById("n");
+const simpl_input = document.getElementById("simpl");
+const x_input = document.getElementById("x");
+const y_input = document.getElementById("y");
+const mult_input = document.getElementById("mult");
+const z_input = document.getElementById("z");
+const e_input = document.getElementById("e");
+const pow_input = document.getElementById("pow");
+const a_input = document.getElementById("a");
+const inv_input = document.getElementById("inv");
 const mods = document.querySelectorAll(".mod");
+var mod = 0;
 
 function update_mods() {
   for (const mod of mods) {

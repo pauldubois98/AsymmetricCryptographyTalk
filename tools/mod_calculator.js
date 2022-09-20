@@ -12,7 +12,13 @@ const inv_input = document.getElementById("inv");
 const mods = document.querySelectorAll(".mod");
 var mod = 0;
 
-function update_mods() {
+function no_output() {
+  simpl_input.value = "";
+  mult_input.value = "";
+  pow_input.value = "";
+  inv_input.value = "";
+}
+function update_mod() {
   mod = Number(mod_input.value);
   if (mod !== 0 && mod > 1) {
     for (const m of mods) {
@@ -25,12 +31,7 @@ function update_mods() {
     no_output();
   }
 }
-function no_output() {
-  simpl_input.value = "";
-  mult_input.value = "";
-  pow_input.value = "";
-  inv_input.value = "";
-}
+update_mod();
 
 function update_simpl() {
   if (mod > 1) {

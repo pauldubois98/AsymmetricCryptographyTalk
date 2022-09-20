@@ -9,40 +9,40 @@
     <h1>Modulus Calculator</h1>
     <div>
         <label for="mod">mod:</label>
-        <input id="mod" type="number" name="mod" required value="11" onchange="update_all();">
+        <input id="mod" type="number" name="mod" required onchange="update_all();">
     </div>
     <div>
-        <input id="m" type="number" name="m" required value="0" onchange="update_mod();">
+        <input id="n" type="number" name="n" required onchange="update_mod();">
         <span>=</span>
-        <input id="add" type="number" name="add" required value="0" disabled>
+        <input id="simpl" type="number" name="simpl" required disabled>
         <span class="mod">[mod]</span>
     </div>
 
     <h2>Modulus Multiplication</h2>
     <div>
-        <input id="x" type="number" name="x" required value="1" onchange="update_mult();">
+        <input id="x" type="number" name="x" required onchange="update_mult();">
         <span>*</span>
-        <input id="y" type="number" name="y" required value="1" onchange="update_mult();">
+        <input id="y" type="number" name="y" required onchange="update_mult();">
         <span>=</span>
-        <input id="mult" type="number" name="mult" required value="1" disabled>
+        <input id="mult" type="number" name="mult" required disabled>
         <span class="mod">[mod]</span>
     </div>
 
     <h2>Modulus Power</h2>
     <div>
-        <input id="z" type="number" name="x" required value="1" onchange="update_pow();">
+        <input id="z" type="number" name="x" required onchange="update_pow();">
         <span>^</span>
-        <input id="e" type="number" name="e" required value="1" onchange="update_pow();">
+        <input id="e" type="number" name="e" required onchange="update_pow();">
         <span>=</span>
-        <input id="pow" type="number" name="pow" required value="1" disabled>
+        <input id="pow" type="number" name="pow" required disabled>
         <span class="mod">[mod]</span>
     </div>
 
     <h2>Modulus Inverse</h2>
     <div>
-        <input id="a" type="number" name="a" required value="1" onchange="update_inv();">
+        <input id="a" type="number" name="a" required onchange="update_inv();">
         <span><sup>-1</sup>=</span>
-        <input id="i_a" type="number" name="i_a" required value="1" disabled>
+        <input id="inv" type="number" name="inv" required disabled>
         <span class="mod">[mod]</span>
     </div>
     

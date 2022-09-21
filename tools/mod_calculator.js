@@ -40,7 +40,7 @@ update_mod();
 function update_simpl() {
   if (mod > 1) {
     n = Number(n_input.value);
-    simpl_input.value = n % mod;
+    simpl_input.value = ((n % mod) + mod) % mod;
   }
 }
 
@@ -48,7 +48,7 @@ function update_mult() {
   if (mod > 1) {
     x = Number(x_input.value);
     y = Number(y_input.value);
-    mult_input.value = (x * y) % mod;
+    mult_input.value = (((x * y) % mod) + mod) % mod;
   }
 }
 
@@ -60,7 +60,7 @@ function update_pow() {
     for (let i = 0; i < e; i++) {
       p = (p * z) % mod;
     }
-    pow_input.value = p;
+    pow_input.value = (p + mod) % mod;
   }
 }
 

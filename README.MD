@@ -9,3 +9,6 @@ https://pauldubois98.github.io/AsymmetricCryptographyTalk/tools/code_add.html
 
 Code Multiplication:
 https://pauldubois98.github.io/AsymmetricCryptographyTalk/tools/code_mult.html
+
+Mod Calculator:
+https://pauldubois98.github.io/AsymmetricCryptographyTalk/tools/mod_calculator.html

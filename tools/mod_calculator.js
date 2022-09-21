@@ -24,6 +24,10 @@ function update_mod() {
     for (const m of mods) {
       m.innerHTML = "[" + mod + "]";
     }
+    update_simpl();
+    update_mult();
+    update_pow();
+    update_inv();
   } else {
     for (const m of mods) {
       m.innerHTML = "[mod]";

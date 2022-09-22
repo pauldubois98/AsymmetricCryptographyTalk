@@ -12,3 +12,6 @@ https://pauldubois98.github.io/AsymmetricCryptographyTalk/tools/code_mult.html
 
 Mod Calculator:
 https://pauldubois98.github.io/AsymmetricCryptographyTalk/tools/mod_calculator.html
+
+Elliptic Curve visualizer:
+https://pauldubois98.github.io/AsymmetricCryptographyTalk/tools/elliptic_curve.html

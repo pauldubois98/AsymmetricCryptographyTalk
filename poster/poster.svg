@@ -115,8 +115,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.66546715"
-     inkscape:cx="368.91378"
-     inkscape:cy="561.25986"
+     inkscape:cx="86.405467"
+     inkscape:cy="564.26527"
      inkscape:window-width="1920"
      inkscape:window-height="992"
      inkscape:window-x="-8"
@@ -129,7 +129,10 @@
        y="0"
        id="page8"
        width="793.70074"
-       height="1122.5198" />
+       height="1122.5198"
+       inkscape:export-filename="poster.pdf"
+       inkscape:export-xdpi="8"
+       inkscape:export-ydpi="8" />
   </sodipodi:namedview>
   <g
      id="g10"
@@ -142,6 +145,17 @@
        id="path46"
        clip-path="url(#clipPath621)"
        transform="matrix(0.49991697,0,0,0.49979927,0,-1.7655001e-4)" />
+    <text
+       xml:space="preserve"
+       style="font-size:100px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;stroke-width:3.125"
+       x="506.00806"
+       y="2912.0078"
+       id="text431"><tspan
+         sodipodi:role="line"
+         id="tspan429"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:100px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Semi-Bold';fill:#ffffff;stroke-width:3.125"
+         x="506.00806"
+         y="2912.0078">Vendredi 23 Septembre 2022 - 20h</tspan></text>
     <path
        d="m 4391.9003,1219.4433 v -10.1546 c 1.88,-11.6932 12.8467,-20.9247 25.6934,-20.9247 v -10.4624 c -18.8,0 -34.1538,13.5395 -36.9738,31.3871 H 540.42685 c -2.82002,-17.8476 -18.17342,-31.3871 -36.97351,-31.3871 v 10.4624 c 14.72673,0 26.63346,11.6932 26.63346,26.1559 0,14.4627 -11.90673,26.1559 -26.63346,26.1559 v 10.4624 c 18.80009,0 34.15349,-13.5396 36.97351,-31.3871 H 4380.9336 c 2.8197,17.5398 18.1731,31.3871 36.9732,31.3871 v -10.4624 c -12.8464,0 -23.8132,-9.2315 -26.0065,-21.2325"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.0237"
@@ -154,18 +168,6 @@
        id="path88"
        clip-path="url(#clipPath547)"
        transform="matrix(0.57702283,0,0,0.49335292,-195.91642,-87.761893)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:100px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Semi-Bold';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.1263"
-       id="text120"
-       x="656.06586"
-       y="2912.3418"
-       transform="scale(1.0001177,0.99988231)"><tspan
-         x="656.06586 708.27429 761.51648 792.53143 828.92224 875.54797 929.82397 959.49487 1006.1207 1088.4136 1143.1031 1177.3229 1223.9486 1254.9636 1285.9785 1316.9933 1343.7695 1407.4535 1459.145 1490.1599 1547.1239 1578.1388 1604.915 1657.1235 1708.8149 1762.0573"
-         y="2912.3418"
-         sodipodi:role="line"
-         id="tspan118"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:100px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Semi-Bold';stroke-width:3.1263">24 septembre - 10h à 12h30</tspan></text>
     <g
        id="g1457"
        transform="matrix(0.96551728,0,0,0.96551728,-1357.6647,-259.88428)"

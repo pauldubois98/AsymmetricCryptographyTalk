@@ -95,3 +95,4 @@ calc_phi_n();
 calc_options_e();
 calc_d();
 calc_sender_c();
+calc_m();

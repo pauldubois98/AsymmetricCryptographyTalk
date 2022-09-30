@@ -59,3 +59,4 @@ function calc_d() {
 calc_n();
 calc_phi_n();
 calc_options_e();
+calc_d();

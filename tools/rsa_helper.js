@@ -4,6 +4,8 @@ const n_input = document.getElementById("n");
 const phi_n_input = document.getElementById("phi_n");
 const e_select = document.getElementById("e");
 const d_input = document.getElementById("d");
+const c_input = document.getElementById("c");
+const m_input = document.getElementById("m");
 const n_sender_input = document.getElementById("n_sender");
 const e_sender_input = document.getElementById("e_sender");
 const m_sender_input = document.getElementById("m_sender");
@@ -14,6 +16,8 @@ var n;
 var phi_n;
 var e;
 var d;
+var c;
+var m;
 var n_sender;
 var e_sender;
 var m_sender;
@@ -64,15 +68,25 @@ function calc_d() {
   d_input.value = d;
 }
 
+function calc_m() {
+  c = Number(c_input.value);
+  var a = c;
+  for (let i = 1; i < d; i++) {
+    a = (a * c) % n;
+  }
+  m = a;
+  m_input.value = m;
+}
+
 function calc_sender_c() {
   n_sender = Number(n_sender_input.value);
   e_sender = Number(e_sender_input.value);
   m_sender = Number(m_sender_input.value);
-  var c = m_sender;
+  var a = m_sender;
   for (let i = 1; i < e_sender; i++) {
-    c = (c * m_sender) % n;
+    a = (a * m_sender) % n;
   }
-  c_sender = c;
+  c_sender = a;
   c_sender_input.value = c_sender;
 }
 

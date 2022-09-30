@@ -11,3 +11,9 @@ h2{
     margin: 0.5em;
     color: grey;
 }
+input[type="number"]{
+    width: 5em;
+}
+label{
+    text-align: right;
+}

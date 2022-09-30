@@ -9,12 +9,22 @@
     <h1>RSA Helper</h1>
     <h2>Sender</h2>
     <div style="display: grid; grid-template-columns: 1fr 5em 1fr;">
-      <label for="p">p:</label>
-      <input type="number" id="p" name="p">
-      (must be prime)<br>
-      <label for="q">q:</label>
-      <input type="number" id="q" name="q">
-      (must be prime)<br>
+      <label>p:</label>
+      <select id="p">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+      </select>
+      <span>(prime)</span>
+      <label>q:</label>
+      <select id="q">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+      </select>
+      <span>(prime)</span>
       <label for="n">p*q = n:</label>
       <input type="number" id="n" name="n" disabled>
     </div>

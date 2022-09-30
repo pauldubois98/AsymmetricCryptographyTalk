@@ -13,6 +13,15 @@ h2{
 }
 input[type="number"]{
     width: 5em;
+    -moz-appearance: textfield;
+}
+input::-webkit-inner-spin-button {
+    width: 5em;
+    -webkit-appearance: none;
+    margin: 0;
+}
+select{
+    width: 5.55em;
 }
 label{
     text-align: right;

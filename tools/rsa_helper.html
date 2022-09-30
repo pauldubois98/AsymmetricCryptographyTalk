@@ -8,7 +8,7 @@
   <body>
     <h1>RSA Helper</h1>
     <h2>Receiver</h2>
-    <div style="display: grid; grid-template-columns: 1fr 5em 1fr">
+    <div class="inputs">
       <label>p:</label>
       <select id="p" onchange="calc_n(); calc_phi_n(); calc_options_e();">
         <option value="2">2</option>
@@ -367,27 +367,27 @@
       <input type="number" id="d" name="d" disabled />
       <br />
 
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
+      <span class="space"></span>
+      <span class="space"></span>
+      <span class="space"></span>
 
       <label for="c">c:</label>
       <input type="number" id="c" name="c" onchange="calc_m();" />
       <br />
 
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
+      <span class="space"></span>
+      <span class="space"></span>
+      <span class="space"></span>
 
       <label for="m">[n] c<sup>d</sup> ≡ m:</label>
       <input type="number" id="m" name="m" disabled />
       <br />
     </div>
 
-    <span style="height: 5em"></span>
+    <span class="big-space"></span>
 
     <h2>Sender</h2>
-    <div style="display: grid; grid-template-columns: 1fr 5em 1fr">
+    <div class="inputs">
       <label for="n_sender">n:</label>
       <input
         type="number"
@@ -405,9 +405,9 @@
       />
       <br />
 
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
+      <span class="space"></span>
+      <span class="space"></span>
+      <span class="space"></span>
 
       <label for="m_sender">m:</label>
       <input
@@ -418,9 +418,9 @@
       />
       <br />
 
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
-      <span style="height: 0.75em"></span>
+      <span class="space"></span>
+      <span class="space"></span>
+      <span class="space"></span>
 
       <label for="c_sender">[n] m<sup>e</sup> ≡ c:</label>
       <input type="number" id="c_sender" name="c_sender" disabled />

@@ -26,3 +26,13 @@ select{
 label{
     text-align: right;
 }
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 5em 1fr;
+}
+.space{
+    height: 0.75em;
+}
+.big-space{
+    height: 5em;
+}

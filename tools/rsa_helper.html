@@ -383,8 +383,11 @@
       <input type="number" id="m" name="m" disabled />
       <br />
     </div>
+
+    <span style="height: 5em"></span>
+
     <h2>Sender</h2>
-    <div>
+    <div style="display: grid; grid-template-columns: 1fr 5em 1fr">
       <label for="n_sender">n:</label>
       <input
         type="number"
@@ -392,6 +395,7 @@
         name="n_sender"
         onchange="calc_sender_c();"
       />
+      <br />
       <label for="e_sender">e:</label>
       <input
         type="number"
@@ -399,8 +403,12 @@
         name="e_sender"
         onchange="calc_sender_c();"
       />
-    </div>
-    <div style="margin: 0.5em">
+      <br />
+
+      <span style="height: 0.75em"></span>
+      <span style="height: 0.75em"></span>
+      <span style="height: 0.75em"></span>
+
       <label for="m_sender">m:</label>
       <input
         type="number"
@@ -408,10 +416,15 @@
         name="m_sender"
         onchange="calc_sender_c();"
       />
-    </div>
-    <div>
+      <br />
+
+      <span style="height: 0.75em"></span>
+      <span style="height: 0.75em"></span>
+      <span style="height: 0.75em"></span>
+
       <label for="c_sender">[n] m<sup>e</sup> ≡ c:</label>
       <input type="number" id="c_sender" name="c_sender" disabled />
+      <br />
     </div>
   </body>
   <script src="rsa_helper.js"></script>

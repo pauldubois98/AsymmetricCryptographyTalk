@@ -15,10 +15,8 @@ input[type="number"]{
     width: 5em;
     -moz-appearance: textfield;
 }
-input::-webkit-inner-spin-button {
+input{
     width: 5em;
-    -webkit-appearance: none;
-    margin: 0;
 }
 select{
     width: 5.55em;

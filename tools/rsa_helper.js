@@ -3,10 +3,13 @@ const q_select = document.getElementById("q");
 const n_input = document.getElementById("n");
 const phi_n_input = document.getElementById("phi_n");
 const e_select = document.getElementById("e");
+const d_input = document.getElementById("d");
 var p = Number(p_select.value);
 var q = Number(q_select.value);
 var n;
 var phi_n;
+var e;
+var d;
 
 function calc_n() {
   p = Number(p_select.value);
@@ -28,7 +31,7 @@ function calc_options_e() {
     }
   }
   var options_e = "";
-  for (let k = 0; k < phi_n; k++) {
+  for (let k = 1; k < phi_n; k++) {
     var ok = true;
     for (let i = 0; i < divisors.length; i++) {
       const d = divisors[i];
@@ -41,6 +44,16 @@ function calc_options_e() {
     }
     e_select.innerHTML = options_e;
   }
+}
+function calc_d() {
+  e = Number(e_select.value);
+  for (let k = 1; k < phi_n; k++) {
+    if ((e * k) % phi_n == 1) {
+      d = k;
+      k = phi_n;
+    }
+  }
+  d_input.value = d;
 }
 
 calc_n();

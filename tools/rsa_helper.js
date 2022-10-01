@@ -36,6 +36,7 @@ function calc_phi_n() {
   phi_n_input.value = phi_n;
 }
 function calc_options_e() {
+  var nb_options = 0;
   var divisors = [];
   for (let k = 2; k < Math.sqrt(phi_n); k++) {
     if (phi_n % k == 0) {
@@ -52,10 +53,14 @@ function calc_options_e() {
       }
     }
     if (ok) {
+      nb_options += 1;
       options_e += '<option value="' + k + '">' + k + "</option>";
     }
-    e_select.innerHTML = options_e;
+    if (nb_options > 500) {
+      k = phi_n;
+    }
   }
+  e_select.innerHTML = options_e;
 }
 function calc_d() {
   e = Number(e_select.value);

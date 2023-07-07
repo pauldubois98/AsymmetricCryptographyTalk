@@ -2,6 +2,15 @@
 
 A talk about asymmetric cryptography for Info@lèze.
 
+"A talk for non-mathematicians.
+We answer the question of how to send a message securely without a secured connexion.
+The talk is organised into 5 parts:
+- Lock analogie
+- Alhabet encryption
+- RSA encryption
+- ElGamal system
+- Elliptic curves cryptographie."
+
 ## Tools links:
 
 Code Addition:
